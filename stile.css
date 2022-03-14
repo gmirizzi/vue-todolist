@@ -42,12 +42,18 @@ li {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid lightgray;
-    padding: 1em;
+    padding: 0 1em;
+    gap: 2em;
 }
 
 li:hover {
     background-color: white;
+}
+
+li span {
+    flex-grow: 1;
     cursor: pointer;
+    padding: 1em;
 }
 
 li button {
