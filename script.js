@@ -16,6 +16,11 @@ const app = new Vue (
                     done:false
                 }
             ]
+        },
+        methods: {
+            deleteToDo(index){
+                this.todos.splice(index,1)
+            }
         }
     }
 )

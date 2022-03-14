@@ -17,9 +17,9 @@
             <button>Aggiungi</button>
         </div>
         <ul>
-            <li v-for="todo in todos">
+            <li v-for="(todo,index) in todos">
                 <span :style="todo.done?'text-decoration:line-through':'text-decoration:initial'" @click="todo.done=!todo.done">{{todo.text}}</span>
-                <button><i class="fa fa-close"></i></button>
+                <button @click="deleteToDo(index)"><i class="fa fa-close"></i></button>
             </li>
         </ul>
     </div>
