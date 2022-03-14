@@ -13,8 +13,8 @@
 <body>
     <div id="root">
         <div id="add">
-            <input type="text" placeholder="Nuovo ToDo">
-            <button>Aggiungi</button>
+            <input v-model="newToDo" @keydown.enter="addToDo" type="text" placeholder="Nuovo ToDo">
+            <button @click="addToDo">Aggiungi</button>
         </div>
         <ul>
             <li v-for="(todo,index) in todos">
