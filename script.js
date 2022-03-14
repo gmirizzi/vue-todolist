@@ -1,14 +1,21 @@
-const todos = [
+const app = new Vue (
     {
-        todo:'Lavarsi la faccia',
-        done:false
-    },
-    {
-        todo:'Fare colazione',
-        done:false
-    },
-    {
-        todo:'Lavarsi i denti',
-        done:false
+        el:'#root',
+        data: {
+            todos: [
+                {
+                    text:'Lavarsi la faccia',
+                    done:false
+                },
+                {
+                    text:'Fare colazione',
+                    done:false
+                },
+                {
+                    text:'Lavarsi i denti',
+                    done:false
+                }
+            ]
+        }
     }
-]
+)
