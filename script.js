@@ -23,9 +23,9 @@ const app = new Vue(
                 this.todos.splice(index, 1)
             },
             addToDo() {
-                if (this.newToDo.trim() != "") {
+                if (this.newToDo != "") {
                     const newElement={
-                        text: this.newToDo.trim(),
+                        text: this.newToDo,
                         done:false
                     }
                     this.todos.push(newElement)
